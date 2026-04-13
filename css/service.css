@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* service */
+.service { margin-top: 88px; }
+.service .btn_list { display: grid; grid-template-columns: repeat(4, 1fr); color: #fff; }
+.service .btn_list li:nth-child(1) { background: url(../img/sub/service_img01.png) no-repeat center / cover ; transition: all 0.3s;}
+.service .btn_list li:nth-child(2) { background: url(../img/sub/service_img02.png) no-repeat center / cover ; transition: all 0.3s;}
+.service .btn_list li:nth-child(3) { background: url(../img/sub/service_img03.png) no-repeat center / cover ; transition: all 0.3s;}
+.service .btn_list li:nth-child(4) { background: url(../img/sub/service_img04.png) no-repeat center / cover ; transition: all 0.3s;}
+.service .btn_list li:nth-child(1):hover { background: url(../img/sub/service_hover_img01.png) no-repeat center / cover ; }
+.service .btn_list li:nth-child(2):hover { background: url(../img/sub/service_hover_img02.png) no-repeat center / cover ;  }
+.service .btn_list li:nth-child(3):hover { background: url(../img/sub/service_hover_img03.png) no-repeat center / cover ; }
+.service .btn_list li:nth-child(4):hover { background: url(../img/sub/service_hover_img04.png) no-repeat center / cover ; }
+
+.service .btn_list li { padding: 400px 4.17vw; }
+.service .btn_list li h2 { font-size: 5rem; font-weight: 700; }
+.service .btn_list li p { font-size: 3rem; font-family: var(--sub-font); font-style: oblique; margin-bottom: 40px; }
+
+.service .btn_list .btn_more { display: inline-block; }
+.service .btn_list .btn_more > a { display: inline-block; font-size: 1.8rem; border: 1px solid #fff; padding: 5px 30px; }
+.service .btn_list li .btn_more.on a { border: 1px solid var(--highlight-color); background: var(--highlight-color); color: #fff; }
+
+.service .sub_inner { max-width: 1660px; padding: 0 20px; margin: 0 auto; }
+.service #service_con li { height: 1024px; }
+.service #service_con li:not(:first-child) { display: none; }
+
+.service #service_con li .con_top { padding: 100px 0; border-bottom: 1px solid #000; }
+.service #service_con li .con_top .tit { display: flex; gap: 10px; align-items: center; margin-bottom: 50px; }
+.service #service_con li .con_top .tit h3 { font-size: 5rem; font-weight: 700; color: var(--main-color); }
+.service #service_con li .con_top .tit span { display: block; font-size: 3rem; font-family: var(--sub-font); font-style: oblique; color: var(--sub-color); }
+.service #service_con li .con_top p { font-size: 2.5rem; }
+
+.service #service_con li .con_bottom { padding: 50px 0; display: flex; gap: 1.5625vw; justify-content: space-between; }
+.service #service_con li .con_bottom .txt h4 { font-size: 4rem; margin-bottom: 20px; }
+.service #service_con li .con_bottom .txt p { font-size: 2rem; }
+.service #service_con li .con_bottom .img_box { display: flex; gap: 1.5625vw; }
+/* .service #service_con li .con_bottom .img_box img { width: auto; } */
+
+@media(max-width:1440px){
+  .service .btn_list li h2 { font-size: 3.5rem; }
+  .service .btn_list li p { font-size: 2.5rem; margin-bottom: 20px; }
+
+  .service #service_con li .con_top { padding: 100px 0 50px; }
+  .service #service_con li .con_top .tit { margin-bottom: 40px; }
+  .service #service_con li .con_top .tit h3 { font-size: 4.5rem; }
+  .service #service_con li .con_top .tit span { font-size: 2.5rem;}
+  .service #service_con li .con_bottom .txt h4 { font-size: 3.5rem; margin-bottom: 10px; }
+}
+
+@media (max-width: 1240px) {
+  .service #service_con li { height: 1200px; }
+
+  .service #service_con li .con_top { padding: 100px 0 40px; }
+  .service #service_con li .con_top .tit { margin-bottom: 20px; }
+  .service #service_con li .con_bottom { display: flex; flex-wrap: wrap; padding: 40px 0; }
+  .service #service_con li .con_bottom .txt { width: 700px; }
+  .service #service_con li .con_bottom .img_box img { width: 50%; }
+}
+
+@media(max-width: 1100px){
+  .service { margin-top: 77px; }
+  .service .btn_list { grid-template-columns: 1fr; }
+  .service .btn_list li { padding: 80px; margin-bottom: 40px; }
+  .service .btn_list li:nth-child(1) { background: url(../img/sub/mo_service_img01.png) no-repeat center / cover ; }
+  .service .btn_list li:nth-child(2) { background: url(../img/sub/mo_service_img02.png) no-repeat center / cover ;  }
+  .service .btn_list li:nth-child(3) { background: url(../img/sub/mo_service_img03.png) no-repeat center / cover ; }
+  .service .btn_list li:nth-child(4) { background: url(../img/sub/mo_service_img04.png) no-repeat center / cover ; }
+  .service .btn_list li:nth-child(1):hover { background: url(../img/sub/mo_service_img01.png) no-repeat center / cover ; }
+  .service .btn_list li:nth-child(2):hover { background: url(../img/sub/mo_service_img02.png) no-repeat center / cover ;  }
+  .service .btn_list li:nth-child(3):hover { background: url(../img/sub/mo_service_img03.png) no-repeat center / cover ; }
+  .service .btn_list li:nth-child(4):hover { background: url(../img/sub/mo_service_img04.png) no-repeat center / cover ; }
+
+  .service .btn_list li { display: flex; align-items: center; justify-content: space-between; }
+
+  /* .service .btn_list li:nth-child(1):hover { display: none; }
+.service .btn_list li:nth-child(2):hover { display: none;  }
+.service .btn_list li:nth-child(3):hover { display: none; }
+.service .btn_list li:nth-child(4):hover { display: none; } */
+}
+
+@media(max-width: 768px){
+  .service { margin-top: 66px; }
+  .service #service_con li { height: 1100px; }
+
+  .service .btn_list li { padding: 5.2083vw 4.16vw; margin-bottom: 20px; }
+
+  .service .btn_list li h2 { font-size: 3rem; }
+  .service .btn_list li p { font-size: 2.5rem; }
+  .service .btn_list .btn_more > a { font-size: 1.6rem; padding: 5px 20px; }
+
+  .service #service_con li .con_top { padding: 80px 0 40px; }
+  .service #service_con li .con_top .tit { margin-bottom: 40px; display: block; }
+  .service #service_con li .con_top .tit h3 { font-size: 4rem; }
+  .service #service_con li .con_top .tit span { font-size: 2rem;}
+  .service #service_con li .con_top p { font-size: 2rem; }
+
+  .service #service_con li .con_bottom .txt p { font-size: 1.8rem; }
+  .service #service_con li .con_bottom .txt h4 { font-size: 3rem; margin-bottom: 10px; }
+}
+
+@media(max-width: 500px){
+  .service { margin-top: 56px; }
+  .service .btn_list li h2 { font-size: 2.5rem; }
+  .service .btn_list li p { font-size: 2rem; }
+  .service .btn_list .btn_more > a { font-size: 1.6rem; }
+}
